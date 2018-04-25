@@ -157,6 +157,13 @@ You are now on the command line of your own Bitcoin node. First we finish the Pi
 * Exit by selecting `<Finish>`, and `<No>` as no reboot is necessary
 * Make sure, all necessary software packages are installed  
   `$ sudo apt-get install htop git curl bash-completion jq`
+  * If intall jq dosn't worke for you, you have to install it munally
+     `$ pip install jq`
+     `$cd /tmp`
+     `$wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-1.5.tar.gz`
+     `$tar xfvz jq-1.5.tar.gz`
+     `$cd jq-1.5`
+     `$./configure && make && sudo make install`
 
 ### Software update
 It is important to keep the system up-to-date with security patches and application updates. The “Advanced Packaging Tool” (apt) makes this easy:  
